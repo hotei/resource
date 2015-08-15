@@ -51,7 +51,7 @@ come from opening a file.
 
 ### Limitations
 
-* <font color="red">Warning</font> The file designated as output by -rc="file" will be overwritten without warning.
+* >>> Warning <<< The file designated as output by -rc="file" will be overwritten without warning.
 * More of a thing to note than a limitation but each resource comes contained
 in its own file.go If you have a large number of resources that could be a pain to manage.
 While I don't need it (yet), the code could easily be refactored to take multiple
@@ -98,7 +98,7 @@ NOTE:  "higher" relative priority is at top of list
 
 [1]: http://golang.org/ref/spec/ "go reference spec"
 [2]: http://golang.org/pkg/ "go package docs"
-[3]: http://github.com/hotei/resource "github.com/hotei/mdr"
+[3]: http://github.com/hotei/resource "github.com/hotei/resource"
 [4]: http://github.com/tv42/becky "github.com/tv42/becky"
 [5]: http://github.com/jteeuwen/go-bindata "github.com/jteeuwen/go-bindata"
 [6]: http://github.com/akavel/embd-go "github.com/akavel/embd-go"
