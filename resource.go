@@ -13,7 +13,7 @@ import (
 	"os"
 	//"strings"
 	//
-	"github.com/hotei/mdr"
+	//"github.com/hotei/mdr"
 )
 
 var (
@@ -112,6 +112,7 @@ func Encode64File(fname string, rcName string) error {
 	return err
 }
 
+/*
 func decodeTest(fname string) {
 	sha, _ := mdr.FileSHA256(fname)
 	bites, err := base64.StdEncoding.DecodeString(*testData)
@@ -126,6 +127,7 @@ func decodeTest(fname string) {
 		log.Panicf("decoded version and original don't match")
 	}
 }
+*/
 
 func main() {
 	paranoid := false
@@ -136,6 +138,6 @@ func main() {
 		log.Panicf("%v", err)
 	}
 	if paranoid {
-		decodeTest(flagSourceFile)
+		// decodeTest(flagSourceFile)
 	}
 }

@@ -2,7 +2,7 @@
 
 PROG = resource
 VERSION = 0.1.0
-TARDIR = 	$(HOME)/Desktop/TarPit/
+TARDIR = $(HOME)/Desktop/TarPit/
 DATE = 	`date "+%Y-%m-%d.%H_%M_%S"`
 DOCOUT = README-$(PROG)-godoc.md
 
@@ -44,10 +44,10 @@ clean:
 
 tar:
 	echo $(TARDIR)$(PROG)_$(VERSION)_$(DATE).tar
-	tar -ncvf $(TARDIR)$(PROG)_$(VERSION)_$(DATE).tar .# Coverage test maker
+	tar -ncvf $(TARDIR)$(PROG)_$(VERSION)_$(DATE).tar .
 
 test:
-# remove possibly broken version of loki.go first
+# remove possibly broken version of loki.go first (only needed during debug)
 	rm -f loki.go
 	go build -v
 	./resource -source="loki.jpg" -rc="loki.go" -var="lokiJpgBites"
